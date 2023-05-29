@@ -1,4 +1,6 @@
 {
-  "github": "http://github.com/todd-miller/can-opener"
+  "github": "http://github.com/todd-miller/can-opener",
+  "jira": "https://landiindustries.atlassian.net/jira/software/projects/QUO/boards/46",
+  "confluence": "https://landiindustries.atlassian.net/wiki/spaces/QUOV/overview"
 }
 
