@@ -29,7 +29,8 @@ while [[ $# -gt 0 ]]; do
 done
 
 if  $GIT || $ALL  ; then
-  git=$(ls | cat "references.json" | jq -r ".github")
+  search="url = git@"
+  git=$(cat ./.git/config | grep 'url' | sed -n -e 's/url = git@github.com:/http:\/\/github.com\//p')
   open -a "Google Chrome" $git
 fi
 
